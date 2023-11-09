@@ -1,0 +1,13 @@
+Useful links:
+https://json2csharp.com/code-converters/json-to-pojo
+https://json2csharp.com/code-converters/xml-to-java
+
+https://beautifytools.com/xml-beautifier.php
+https://jsonbeautifier.org/
+
+
+Pulgin:
+GenerateAllSetter  - bruceGe
+
+KeyNote:
+Response make all the pojo class public
