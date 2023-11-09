@@ -1,12 +1,12 @@
-package opc.thoidpaypal.createorderapiV2.requestV2;
+package opc.thoidpaypal.createorderapiV2.request;
 
 import java.util.ArrayList;
 
 public class CreateOrderRequestBuilderV2 {
 
-    public CreateOrderRequestV2 setCreateOrderRequestBuilder(){
+    public CreateOrderRequestPojoV2 setCreateOrderRequestBuilder(){
 
-        CreateOrderRequestV2 createOrderRequest=new CreateOrderRequestV2();
+        CreateOrderRequestPojoV2 createOrderRequest=new CreateOrderRequestPojoV2();
 
         createOrderRequest.setIntent("CAPTURE");
 

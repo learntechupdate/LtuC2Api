@@ -1,12 +1,7 @@
-package opc.thoidpaypal.createorderapiV2;
+package opc.thoidpaypal.createorderapiV2.request;
 
 import io.restassured.response.Response;
 import opc.thoidpaypal.constant.Constant;
-
-
-
-import opc.thoidpaypal.createorderapiV2.requestV2.CreateOrderRequestBuilderV2;
-import opc.thoidpaypal.createorderapiV2.requestV2.CreateOrderRequestV2;
 
 
 import java.util.HashMap;
@@ -21,10 +16,9 @@ public class CreateOrderRequestServiceV2 {
         String url = Constant.createOrderPayPalUrl;
 
         CreateOrderRequestBuilderV2 createOrderBuilderv2=new CreateOrderRequestBuilderV2();
-        CreateOrderRequestV2 body = createOrderBuilderv2.setCreateOrderRequestBuilder();
-        
-        System.out.println("CreateOrderRequestV2"+body);
+        CreateOrderRequestPojoV2 body = createOrderBuilderv2.setCreateOrderRequestBuilder();
 
+        System.out.println("Reqbody : "+body);
         return createOrderRequest.postApi(url,this.createOrderheader(),body);
         
     }

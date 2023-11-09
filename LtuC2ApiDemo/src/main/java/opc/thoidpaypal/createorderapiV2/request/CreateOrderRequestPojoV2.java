@@ -1,12 +1,11 @@
-package opc.thoidpaypal.createorderapiV2.requestV2;
+package opc.thoidpaypal.createorderapiV2.request;
 
 import lombok.Data;
 
 import java.util.ArrayList;
 
     @Data
-
-    public class CreateOrderRequestV2 {
+    public class CreateOrderRequestPojoV2 {
         String intent;
         ArrayList<PurchaseUnit> purchase_units;
         ApplicationContext application_context;
