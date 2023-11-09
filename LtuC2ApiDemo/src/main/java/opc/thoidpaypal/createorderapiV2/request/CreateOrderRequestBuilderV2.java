@@ -2,8 +2,16 @@ package opc.thoidpaypal.createorderapiV2.request;
 
 import java.util.ArrayList;
 
+/**
+ * The type Create order request builder v 2.
+ */
 public class CreateOrderRequestBuilderV2 {
 
+    /**
+     * Set create order request builder create order request pojo v 2.
+     *
+     * @return the create order request pojo v 2
+     */
     public CreateOrderRequestPojoV2 setCreateOrderRequestBuilder(){
 
         CreateOrderRequestPojoV2 createOrderRequest=new CreateOrderRequestPojoV2();

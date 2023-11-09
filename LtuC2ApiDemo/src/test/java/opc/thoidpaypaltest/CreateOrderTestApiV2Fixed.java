@@ -7,8 +7,14 @@ import opc.thoidpaypal.createorderapiV2.request.CreateOrderRequestServiceV2;
 import opc.thoidpaypal.createorderapiV2.response.CreateOrderResponsePojo;
 import org.testng.annotations.Test;
 
+/**
+ * The type Create order test api v 2 fixed.
+ */
 public class CreateOrderTestApiV2Fixed {
 
+    /**
+     * Test create order api.
+     */
     @Test
     public  void testCreateOrderApi(){
 

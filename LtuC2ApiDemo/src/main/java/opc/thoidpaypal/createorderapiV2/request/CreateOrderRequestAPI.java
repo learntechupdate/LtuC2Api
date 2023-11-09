@@ -7,16 +7,26 @@ import io.restassured.specification.RequestSpecification;
 
 import java.util.Map;
 
+/**
+ * The type Create order request api.
+ */
 public class CreateOrderRequestAPI {
 
-    public Response postApi(String url, Map<String,String> headers, CreateOrderRequestPojoV2 body){
+    /**
+     * Post api response.
+     *
+     * @param url     the url
+     * @param headers the headers
+     * @param reqBody    the body
+     * @return the response
+     */
+    public Response postApi(String url, Map<String,String> headers, String reqBody){
         Response response;
         RequestSpecification reqSpc= RestAssured.given();
         reqSpc.headers(headers);
-        
-        String jsonBody = new Gson().toJson(body);
-        reqSpc.body(jsonBody);
-        System.out.println("jsonBody : "+jsonBody);
+
+        reqSpc.body(reqBody);//internally convert java pojo to json
+        System.out.println("jsonBody : "+reqBody);
         response=reqSpc.post(url);
         return response;
 

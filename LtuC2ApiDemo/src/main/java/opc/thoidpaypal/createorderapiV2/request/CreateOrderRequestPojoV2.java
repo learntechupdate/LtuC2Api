@@ -4,55 +4,55 @@ import lombok.Data;
 
 import java.util.ArrayList;
 
-    @Data
+@Data
     public class CreateOrderRequestPojoV2 {
-        String intent;
-        ArrayList<PurchaseUnit> purchase_units;
-        ApplicationContext application_context;
+    String intent;
+    ArrayList<PurchaseUnit> purchase_units;
+    ApplicationContext application_context;
     }
 
 
-    @Data
+@Data
     class Amount {
-        String currency_code;
-        String value;
-        Breakdown breakdown;
+    String currency_code;
+    String value;
+    Breakdown breakdown;
     }
 
-    @Data
+@Data
     class ApplicationContext {
-        String return_url;
-        String cancel_url;
+    String return_url;
+    String cancel_url;
     }
 
-    @Data
+@Data
     class Breakdown {
-        ItemTotal item_total;
+    ItemTotal item_total;
     }
 
-    @Data
+@Data
     class Item {
-        String name;
-        String description;
-        String quantity;
-        UnitAmount unit_amount;
+    String name;
+    String description;
+    String quantity;
+    UnitAmount unit_amount;
     }
 
-    @Data
+@Data
     class ItemTotal {
-        String currency_code;
-        String value;
+    String currency_code;
+    String value;
     }
 
-    @Data
+@Data
     class PurchaseUnit {
-        ArrayList<Item> items;
-        Amount amount;
+    ArrayList<Item> items;
+    Amount amount;
     }
 
-    @Data
+@Data
     class UnitAmount {
-        String currency_code;
-        String value;
+    String currency_code;
+    String value;
     }
 
