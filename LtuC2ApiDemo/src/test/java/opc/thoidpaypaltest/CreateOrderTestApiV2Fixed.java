@@ -27,6 +27,8 @@ public class CreateOrderTestApiV2Fixed {
         CreateOrderResponsePojo createOrderJavaResponse
                 =new Gson().fromJson(response.asString(),CreateOrderResponsePojo.class);
 
+        System.out.println("createOrderJavaResponse : "+createOrderJavaResponse);
+
         String id = createOrderJavaResponse.getId();
         System.out.println("id : "+id);
         String value = createOrderJavaResponse.getPurchase_units().get(0).getAmount().getBreakdown().getItem_total().getValue();

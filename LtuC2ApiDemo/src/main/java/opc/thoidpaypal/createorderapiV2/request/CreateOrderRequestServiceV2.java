@@ -36,7 +36,7 @@ public class CreateOrderRequestServiceV2 {
     private Map<String,String> createOrderheader (){
         Map<String,String> headers = new HashMap<>();
 
-        headers.put("Authorization","Bearer A21AALicWZ5kreXGsSe0Hhm6xZe9AuQzvklFm9cJhdxWccdUsfbfZ1Pl_m-nTwTiDRwG3J5clkmEGpD8s5Y_ySAujD79xeGEg");
+        headers.put("Authorization","Bearer A21AAJkgEeDrACtxUIX-7inK3Hm-dqfIbnD1_Zupf80CCuTb6rIqIr45LH5CAOm4Y2nE7auMeLrC8NTIALsZnqII4WUTjlQ9A");
         headers.put("Postman-Token","<calculated when request is sent>");
 
         headers.put("Content-Type","application/json");

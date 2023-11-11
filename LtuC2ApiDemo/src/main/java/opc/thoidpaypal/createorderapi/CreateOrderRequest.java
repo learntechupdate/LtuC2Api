@@ -17,11 +17,10 @@ public class CreateOrderRequest {
     RequestSpecification reqSpc= RestAssured.given();
 
     /**
-     * Post api response.
      *
-     * @param url  the url
-     * @param body the body
-     * @return the response
+     * @param url
+     * @param body
+     * @return
      */
     public Response postApi(String url, String body){
         Response response;
