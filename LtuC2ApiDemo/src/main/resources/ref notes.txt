@@ -5,9 +5,17 @@ https://json2csharp.com/code-converters/xml-to-java
 https://beautifytools.com/xml-beautifier.php
 https://jsonbeautifier.org/
 
+Dependency:
+io.rest-assured, rest-assured
+org.projectlombok, lombok
+com.fasterxml.jackson.core, jackson-databind
+org.testng, testng
+com.google.code.gson, gson
 
 Pulgin:
 GenerateAllSetter  - bruceGe
+JavaDoc - Sergey Timofiychuk
 
 KeyNote:
 Response make all the pojo class public
+

@@ -6,10 +6,22 @@ import io.restassured.specification.RequestSpecification;
 
 import java.util.Map;
 
+/**
+ * The type Create order request.
+ */
 public class CreateOrderRequest {
 
+    /**
+     * The Req spc.
+     */
     RequestSpecification reqSpc= RestAssured.given();
 
+    /**
+     *
+     * @param url
+     * @param body
+     * @return
+     */
     public Response postApi(String url, String body){
         Response response;
 
