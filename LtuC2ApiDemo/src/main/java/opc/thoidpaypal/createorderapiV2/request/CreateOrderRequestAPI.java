@@ -29,8 +29,5 @@ public class CreateOrderRequestAPI {
         System.out.println("jsonBody : "+reqBody);
         response=reqSpc.post(url);
         return response;
-
     }
-
-
 }

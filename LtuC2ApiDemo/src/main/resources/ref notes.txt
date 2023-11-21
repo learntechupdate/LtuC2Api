@@ -12,6 +12,8 @@ com.fasterxml.jackson.core, jackson-databind
 org.testng, testng
 com.google.code.gson, gson
 
+xml marshalling - javax.xml.bind, jaxb-api
+
 Pulgin:
 GenerateAllSetter  - bruceGe
 JavaDoc - Sergey Timofiychuk
